@@ -27,9 +27,9 @@ grep -n 'href="#" class="btn btn-gold"' */index.html
 
 Não há nenhum botão/link de WhatsApp nos HTMLs enviados (nem flutuante, nem no rodapé). Precisamos do número para adicionar.
 
-## 3. Página `/livraria/`
+## 3. Página `/livraria/` — RESOLVIDO
 
-O menu do site institucional (`index.html`) e das landing pages linka para `/livraria/`, mas esse HTML não foi enviado. Enquanto não existir, o link dá 404.
+Os links de "Livraria" agora apontam para o site externo `https://livrariadorodrigo.com.br` (abrindo em nova aba). Não há mais 404.
 
 ## 4. Links "Ler mais →" dos artigos
 
