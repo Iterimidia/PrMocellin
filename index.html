@@ -166,14 +166,13 @@
   .wp span{font-size:.86rem;color:rgba(255,255,255,.66);font-weight:300}
   /* Igrejas Resgatar */
   .news{background:var(--cream);padding:96px 0}
-  .church-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:8px}
+  .church-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:8px}
   .church-card{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 24px;display:flex;gap:16px;align-items:flex-start;transition:border-color .25s,transform .25s,box-shadow .25s}
   .church-card:hover{border-color:var(--gold);transform:translateY(-4px);box-shadow:0 20px 40px -24px rgba(27,42,107,.35)}
   .church-card .ci{width:44px;height:44px;border:1.5px solid var(--gold);border-radius:50%;display:grid;place-items:center;flex:none}
   .church-card .ci svg{width:21px;height:21px;stroke:var(--navy);stroke-width:1.5;fill:none}
   .church-card h4{font-size:1.1rem;color:var(--navy);margin-bottom:5px}
   .church-card address{font-style:normal;font-size:.87rem;color:var(--muted);line-height:1.55}
-  .church-card .pending{display:inline-block;margin-top:6px;font-size:.68rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--gold-deep)}
   .church-cta{text-align:center;margin-top:40px}
   /* Footer */
   footer{background:var(--dark);color:rgba(255,255,255,.66);padding:64px 0 30px}
@@ -273,7 +272,7 @@
     .reveal,.reveal-l,.reveal-r,.reveal-s,.hero-copy *,.hero-photo,.hero-photo .quote,.hero-photo .ring{animation:none!important;opacity:1!important;transform:none!important}
     .hero::before,.hero-photo .ring::after{animation:none!important}
   }
-  @media(max-width:1000px){.hub-grid{grid-template-columns:repeat(2,1fr)}.pillars-grid{grid-template-columns:1fr}.about-grid,.why-grid{grid-template-columns:1fr;gap:44px}.about-photo{max-width:400px;margin:0 auto}}
+  @media(max-width:1000px){.hub-grid,.church-grid{grid-template-columns:repeat(2,1fr)}.pillars-grid{grid-template-columns:1fr}.about-grid,.why-grid{grid-template-columns:1fr;gap:44px}.about-photo{max-width:400px;margin:0 auto}}
   @media(max-width:900px){
     /* Hero mobile: foto vira bloco no topo (fluxo normal, sem vw/absolute) */
     .hero{min-height:0;display:block}
@@ -535,15 +534,42 @@
         <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
         <div>
           <h4>Resgatar Guaratinguetá</h4>
-          <address>Rua Zacarias Jorge Boueri, 116 — Chácaras Selles<br>Guaratinguetá — SP, CEP 12505-512</address>
+          <address>Av. Zacarias Jorge Boueri, 116 — Chácara Selles<br>Guaratinguetá — SP, CEP 12505-512</address>
         </div>
       </div>
       <div class="church-card reveal-s d2">
         <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
         <div>
+          <h4>Resgatar Moreira</h4>
+          <address>R. Benedito Marcelino da Silva, 145 — Laerte Assunção<br>Pindamonhangaba — SP, CEP 12440-600</address>
+        </div>
+      </div>
+      <div class="church-card reveal-s d3">
+        <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+        <div>
+          <h4>Resgatar Pindamonhangaba</h4>
+          <address>R. Ryoiti Yassuda, 628 — Andrade<br>Pindamonhangaba — SP, CEP 12402-530</address>
+        </div>
+      </div>
+      <div class="church-card reveal-s d4">
+        <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+        <div>
           <h4>Resgatar Taubaté</h4>
-          <address>Endereço a confirmar</address>
-          <span class="pending">Aguardando confirmação</span>
+          <address>R. Dr. Silvino Canúto de Abreu, 31 — Jardim Sandra Maria<br>Taubaté — SP, CEP 12081-160</address>
+        </div>
+      </div>
+      <div class="church-card reveal-s d5">
+        <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+        <div>
+          <h4>Resgatar Lorena</h4>
+          <address>R. Cel. José Vicente, 481 — Cidade Industrial<br>Lorena — SP, CEP 12609-350</address>
+        </div>
+      </div>
+      <div class="church-card reveal-s d6">
+        <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+        <div>
+          <h4>Resgatar Cruzeiro</h4>
+          <address>R. José de Moraes, 199 — Retiro da Mantiqueira<br>Cruzeiro — SP, CEP 12711-640</address>
         </div>
       </div>
     </div>
