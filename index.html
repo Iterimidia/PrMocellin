@@ -35,7 +35,7 @@
   .nav-links{display:flex;gap:24px;align-items:center;margin-left:auto}
   .nav-links a{font-size:.8rem;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.78);font-weight:400;transition:color .2s}
   .nav-links a:hover{color:var(--gold)}
-  .nav-cta{background:var(--gold);color:var(--dark)!important;padding:11px 20px;border-radius:4px;font-size:.72rem!important;font-weight:700;letter-spacing:.08em}
+  .nav-cta{position:relative;overflow:hidden;background:var(--gold);color:var(--dark)!important;padding:11px 20px;border-radius:4px;font-size:.72rem!important;font-weight:700;letter-spacing:.08em}
   .nav-cta:hover{background:var(--gold-soft)}
   .menu-btn{display:none;background:none;border:0;cursor:pointer;font-size:1.5rem;color:#fff}
   /* menu mobile drawer */
@@ -272,8 +272,28 @@
   /* header encolhe no scroll */
   header{transition:height .3s,background .3s}
   header.shrink .nav{height:64px}
+  /* ============ LETREIRO (faixa de texto rolando) ============ */
+  .marquee{background:var(--dark-2);border-bottom:1px solid rgba(242,169,0,.16);overflow:hidden;white-space:nowrap}
+  .marquee-track{display:inline-flex;width:max-content;animation:marqueeScroll 34s linear infinite}
+  .marquee-group{display:inline-flex;align-items:center;padding:11px 0}
+  .marquee-group span{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:rgba(255,255,255,.82);white-space:nowrap;padding:0 10px}
+  .marquee-group span.dot{color:var(--gold);padding:0 22px;font-weight:400}
+  @keyframes marqueeScroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+  /* ============ CTA FLUTUANTE ============ */
+  .float-cta{position:fixed;right:26px;bottom:26px;z-index:65;display:inline-flex;align-items:center;gap:9px;background:var(--gold);color:var(--dark);padding:15px 24px;border-radius:50px;font-family:var(--body);font-weight:700;font-size:.78rem;letter-spacing:.06em;text-transform:uppercase;box-shadow:0 16px 36px -14px rgba(242,169,0,.7);transition:transform .3s,background .3s}
+  .float-cta:hover{transform:translateY(-3px) scale(1.03);background:var(--gold-soft)}
+  .float-cta svg{width:16px;height:16px;flex:none}
+  .float-cta-ring{position:absolute;inset:0;border-radius:50px;border:2px solid var(--gold);animation:ctaPulse 2.6s ease-out infinite;pointer-events:none}
+  .float-cta-ring.r2{animation-delay:1.3s}
+  @keyframes ctaPulse{0%{transform:scale(1);opacity:.65}100%{transform:scale(1.4);opacity:0}}
+  /* ============ BRILHO AMBIENTE (botões dourados principais) ============ */
+  .btn-primary::before,.nav-cta::before{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(120deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);animation:ambientShine 5s ease-in-out infinite}
+  @keyframes ambientShine{0%{left:-60%}22%{left:130%}100%{left:130%}}
   /* respeitar preferência de menos movimento */
   @media(prefers-reduced-motion:reduce){
+    .marquee-track{animation:none}
+    .float-cta-ring{animation:none;display:none}
+    .btn-primary::before,.nav-cta::before{animation:none;display:none}
     .reveal,.reveal-l,.reveal-r,.reveal-s,.hero-copy *,.hero-photo,.hero-photo .quote,.hero-photo .ring{animation:none!important;opacity:1!important;transform:none!important}
     .hero::before,.hero-photo .ring::after{animation:none!important}
   }
@@ -312,6 +332,11 @@
     .btn{padding:14px 22px;font-size:.76rem}
     .btn-row{width:100%}
     .btn-row .btn{flex:1;justify-content:center;min-width:0}
+    .marquee-group span{font-size:.66rem;padding:0 7px}
+    .marquee-group span.dot{padding:0 14px}
+    .float-cta{right:16px;bottom:16px;padding:14px;gap:0}
+    .float-cta-label{display:none}
+    .float-cta svg{width:19px;height:19px}
   }
 </style>
 </head>
@@ -331,6 +356,24 @@
     <button class="menu-btn" aria-label="Menu">☰</button>
   </div>
 </header>
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-group">
+      <span>Formação Bíblica Sólida</span><span class="dot">✦</span>
+      <span>+5.000 Alunos</span><span class="dot">✦</span>
+      <span>Exposição Fiel das Escrituras</span><span class="dot">✦</span>
+      <span>Cursos com Certificado</span><span class="dot">✦</span>
+      <span>Educação Cristã para a Família</span><span class="dot">✦</span>
+    </div>
+    <div class="marquee-group">
+      <span>Formação Bíblica Sólida</span><span class="dot">✦</span>
+      <span>+5.000 Alunos</span><span class="dot">✦</span>
+      <span>Exposição Fiel das Escrituras</span><span class="dot">✦</span>
+      <span>Cursos com Certificado</span><span class="dot">✦</span>
+      <span>Educação Cristã para a Família</span><span class="dot">✦</span>
+    </div>
+  </div>
+</div>
 <div class="mobile-menu" id="mobileMenu">
   <button class="mm-close" id="mmClose" aria-label="Fechar menu">&times;</button>
   <a href="/" class="mm-link">Início</a>
@@ -647,6 +690,12 @@
   </div>
 </footer>
 
+<a href="#cursos" class="float-cta" aria-label="Conheça os cursos">
+  <span class="float-cta-ring"></span>
+  <span class="float-cta-ring r2"></span>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zM8 7h8M8 11h8M8 15h5"/></svg>
+  <span class="float-cta-label">Conheça os cursos</span>
+</a>
 
 <script>
 (function(){
