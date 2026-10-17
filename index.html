@@ -155,7 +155,7 @@
   .verse cite{display:block;margin-top:22px;font-style:normal;font-size:.78rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);font-family:var(--body);font-weight:700}
   /* Hub cards */
   .hub{background:var(--paper)}
-  .hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .hub-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;max-width:760px;margin:0 auto}
   .hub-card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:32px 22px;text-align:center;transition:transform .2s,box-shadow .2s,border-color .2s;display:flex;flex-direction:column;align-items:center}
   .hub-card:hover{transform:translateY(-5px);box-shadow:0 22px 44px -24px rgba(27,42,107,.4);border-color:var(--gold)}
   .hub-ico{width:56px;height:56px;display:grid;place-items:center;margin-bottom:18px}
@@ -334,6 +334,7 @@
   }
   @media(max-width:560px){
     .foot-grid{grid-template-columns:1fr;gap:32px}
+    .hub-grid{grid-template-columns:1fr;max-width:420px}
     .wrap{padding:0 20px}
     .hero-bg,.hero-bg img{height:260px}
     .hero h1{font-size:2rem}
@@ -549,16 +550,11 @@
     </div>
     <div class="hub-grid">
       <div class="hub-card reveal d1">
-        <div class="hub-ico"><svg viewBox="0 0 24 24"><path d="M4 5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V5zM8 7h8M8 11h8M8 15h5"/></svg></div>
-        <h3>Cursos</h3><p>Formação teológica e prática para servir à Igreja com excelência.</p>
-        <a href="#cursos" class="lk">Acessar</a>
-      </div>
-      <div class="hub-card reveal d2">
         <div class="hub-ico"><svg viewBox="0 0 24 24"><path d="M4 4h11a2 2 0 0 1 2 2v14H6a2 2 0 0 1-2-2V4zM17 6h3v14H6M8 9h6M8 13h6"/></svg></div>
         <h3>Livraria</h3><p>Livros que edificam e equipam líderes para o Reino.</p>
         <a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener" class="lk">Ver livros</a>
       </div>
-      <div class="hub-card reveal d3">
+      <div class="hub-card reveal d2">
         <div class="hub-ico"><svg viewBox="0 0 24 24"><path d="M12 3v10M12 13a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM12 3l6 2M18 5v8"/></svg></div>
         <h3>Sermões</h3><p>Exposição fiel das Escrituras que transformam vidas.</p>
         <a href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener" class="lk">Assistir pregações</a>
@@ -595,7 +591,7 @@
     <div class="church-grid">
       <div class="church-card reveal-s d1">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Guaratinguetá</h4>
             <address>Av. Zacarias Jorge Boueri, 116 — Chácara Selles<br>Guaratinguetá — SP, CEP 12505-512</address>
@@ -609,7 +605,7 @@
       </div>
       <div class="church-card reveal-s d2">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Moreira</h4>
             <address>R. Benedito Marcelino da Silva, 145 — Laerte Assunção<br>Pindamonhangaba — SP, CEP 12440-600</address>
@@ -623,7 +619,7 @@
       </div>
       <div class="church-card reveal-s d3">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Pindamonhangaba</h4>
             <address>R. Ryoiti Yassuda, 628 — Andrade<br>Pindamonhangaba — SP, CEP 12402-530</address>
@@ -637,7 +633,7 @@
       </div>
       <div class="church-card reveal-s d4">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Taubaté</h4>
             <address>R. Dr. Silvino Canúto de Abreu, 31 — Jardim Sandra Maria<br>Taubaté — SP, CEP 12081-160</address>
@@ -651,7 +647,7 @@
       </div>
       <div class="church-card reveal-s d5">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Lorena</h4>
             <address>R. Cel. José Vicente, 481 — Cidade Industrial<br>Lorena — SP, CEP 12609-350</address>
@@ -665,7 +661,7 @@
       </div>
       <div class="church-card reveal-s d6">
         <div class="church-top">
-          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span>
+          <span class="ci"><svg viewBox="0 0 24 24"><path d="M12 21s7-7.58 7-12a7 7 0 1 0-14 0c0 4.42 7 12 7 12z"/><circle cx="12" cy="9" r="2.3"/></svg></span>
           <div>
             <h4>Resgatar Cruzeiro</h4>
             <address>R. José de Moraes, 199 — Retiro da Mantiqueira<br>Cruzeiro — SP, CEP 12711-640</address>
@@ -697,9 +693,9 @@
       <div class="foot-col"><h5>Navegação</h5>
         <a href="/">Início</a><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#contato">Contato</a></div>
       <div class="foot-col"><h5>Cursos & Livraria</h5>
-        <a href="#cursos">Todos os cursos</a><a href="/mentecrista/">Mente Cristã</a><a href="/criacaodefilhos/">Criação de Filhos</a><a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a></div>
+        <a href="#cursos">Todos os cursos</a><a href="/sexualidadecrista/">Sexualidade Cristã</a><a href="/homeschooling/">Homeschooling</a><a href="/criacaodefilhos/">Criação de Filhos</a><a href="/culpadomeucorpo/">A Culpa é do Meu Corpo</a><a href="/mentecrista/">Mente Cristã</a><a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a></div>
       <div class="foot-col foot-contact"><h5>Contato</h5>
-        <div>contato@rodrigomocellin.com.br</div><div>Guaratinguetá · SP</div></div>
+        <div>contato@rodrigomocellin.com.br</div><div>Vale do Paraíba · SP</div></div>
     </div>
     <div class="foot-bottom">© 2026 Pr. Rodrigo Mocellin. Todos os direitos reservados.</div>
   </div>
