@@ -144,7 +144,7 @@ def pagina(slug, d):
       <a href="#duvidas">Dúvidas</a>
       <a href="/">Pr. Rodrigo Mocellin</a>
       <a href="#inscrever" class="btn btn-accent bf-off">Quero me inscrever</a>
-      <a href="#inscrever" class="btn btn-gold bf-only">Black Friday −{pct}%</a>
+      <a href="#inscrever" class="btn btn-gold bf-only">Black Friday -{pct}%</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 16h16"/></svg></button>
   </div>
@@ -158,7 +158,7 @@ def pagina(slug, d):
     <p class="lead">{e(d["lead"])}</p>
     <div class="lp-price">
       <div class="bf-off"><b>R$ {oficial},00</b><span>{x_oficial}</span></div>
-      <div class="bf-only bfp"><span class="tag">Black Friday −{pct}%</span><div><s>R$ {oficial},00</s><b>R$ {promo},00</b></div><span>ou em até 12x no cartão</span></div>
+      <div class="bf-only bfp"><span class="tag">Black Friday -{pct}%</span><div><s>R$ {oficial},00</s><b>R$ {promo},00</b></div><span>ou em até 12x no cartão</span></div>
     </div>
     <div class="lp-actions">
       <a href="#inscrever" class="btn btn-accent bf-off">Quero me inscrever {SETA}</a>
@@ -173,7 +173,7 @@ def pagina(slug, d):
 <section class="bfs bf-only" aria-label="Black Friday">
   <div class="wrap">
     <div class="bfs-t">Black<br>Friday</div>
-    <div class="bfs-p">De <s>R$ {oficial},00</s> por<b>R$ {promo},00<em>−{pct}%</em></b>ou em até 12x no cartão</div>
+    <div class="bfs-p">De <s>R$ {oficial},00</s> por<b>R$ {promo},00<em>-{pct}%</em></b>ou em até 12x no cartão</div>
     <div class="bfs-r">
       <div class="bfx-clock bf-timer"><div class="l">A oferta termina em</div>{cd()}</div>
       {comprar("Garantir com desconto", "btn btn-gold")}

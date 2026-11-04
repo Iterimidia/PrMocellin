@@ -1,5 +1,5 @@
 /*
-  Black Friday — configuração central (vale para a home e as 5 páginas de curso).
+  Black Friday: configuração central (vale para a home e as 5 páginas de curso).
   A promoção só aparece entre "inicio" e "fim" E com todos os links preenchidos.
   Fora disso, o site mostra os preços e links oficiais.
   Prévia: abra qualquer página com ?bf=1 (desligar a prévia: ?bf=0).
