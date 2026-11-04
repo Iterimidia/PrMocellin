@@ -6,8 +6,8 @@
 */
 (function(){
   var BF = {
-    inicio: null, // ex.: "2026-11-27T00:00:00-03:00"
-    fim: null,    // ex.: "2026-11-30T23:59:59-03:00"
+    inicio: null,                         // null = já começou
+    fim: "2026-11-30T23:59:59-03:00",     // 30/11 às 23:59 (horário de Brasília)
     links: {
       sexualidadecrista: "https://sun.eduzz.com/2194009",
       homeschooling: "https://sun.eduzz.com/1686279",

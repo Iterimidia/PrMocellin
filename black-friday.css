@@ -103,3 +103,11 @@ html.bf .price-card{border:2px solid #F2A900;box-shadow:0 0 0 6px rgba(242,169,0
   .bf-strip-in .bf-cta{width:100%}
 }
 .bf-strip .bf-cta{padding:14px 26px;font-size:.88rem}
+
+/* Contadores extras (hero, cabeçalho dos cursos, card de preço, faixa final) */
+.bf-hero-timer{margin-top:26px}
+.bf-inline{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:10px 14px;margin-top:20px}
+.cta-band .bf-inline{justify-content:flex-start;margin-top:14px}
+.bf-price-timer{margin:14px 0 22px}
+.bf-price-timer .bf-timer{flex-direction:column;gap:8px}
+@media(max-width:900px){.cta-band .bf-inline{justify-content:center}}
