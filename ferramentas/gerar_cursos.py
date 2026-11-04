@@ -8,7 +8,7 @@ import json, os
 from html import escape as e
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SITE = "https://prmocellin.netlify.app"
+SITE = "https://prmocellin.com"
 
 CONFIG = {
     # slug: (cor escura, cor de destaque, cor do texto sobre o destaque, foto, preço oficial, preço Black Friday, público)
