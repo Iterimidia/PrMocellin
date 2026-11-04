@@ -4,427 +4,390 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="noindex, nofollow">
-<title>Pr. Rodrigo Mocellin — Ensino bíblico para a família e a Igreja</title>
-<meta name="description" content="Pastor Rodrigo Mocellin: cursos, pregações e conteúdo bíblico sobre família, criação de filhos, homeschooling e cultura.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2316140F'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23F5F2EC' text-anchor='middle'%3ERM%3C/text%3E%3C/svg%3E">
+<title>Pr. Rodrigo Mocellin — Cursos bíblicos para a família cristã</title>
+<meta name="description" content="Cursos online, bíblicos e práticos para pais e famílias cristãs: criação de filhos, homeschooling, sexualidade, identidade e cosmovisão cristã. Com o Pr. Rodrigo Mocellin.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314120E'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23D89B13' text-anchor='middle'%3ERM%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
 <script src="/black-friday.js"></script>
 <style>
   :root{
-    --paper:#F5F2EC; --paper-2:#ECE7DE; --ink:#16140F; --ink-2:#3A362E; --muted:#6E685D; --line:#DDD6C9;
-    --gold:#D89B13; --gold-ink:#8A6200;
+    --ink:#14120E; --ink-2:#1E1B16; --paper:#F5F2EC; --paper-2:#EBE5DA; --line:#DCD4C6;
+    --text-2:#3A362E; --muted:#6E685D; --gold:#D89B13; --gold-2:#E8AE2C;
     --head:'Inter Tight',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif; --serif:'Newsreader',Georgia,serif;
-    --wrap:1200px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
-  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bfh,0px) + 80px)}
-  body{font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:clip;font-size:17px}
-  img{display:block;max-width:100%;height:auto}
+  html{scroll-behavior:smooth;scroll-padding-top:calc(var(--bfh,0px) + 76px)}
+  body{font-family:var(--body);font-size:17px;line-height:1.6;color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;overflow-x:clip}
+  img{display:block;max-width:100%}
   a{color:inherit;text-decoration:none}
-  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
-  h1,h2,h3,h4{font-family:var(--head);font-weight:600;letter-spacing:-.02em;line-height:1.1}
-  .label{font-family:var(--head);font-size:.86rem;font-weight:600;letter-spacing:.02em;color:var(--muted);display:block;margin-bottom:18px}
-  .label b{color:var(--ink);font-weight:600}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 32px}
+  h1,h2,h3{font-family:var(--head);font-weight:600;letter-spacing:-.022em;line-height:1.06}
+  em.s{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
+  .label{display:inline-block;font-family:var(--head);font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:18px}
 
-  /* Botões */
-  .btn{display:inline-flex;align-items:center;gap:10px;font-family:var(--head);font-weight:600;font-size:1rem;padding:15px 24px;border-radius:999px;transition:background .2s,color .2s,transform .2s}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;font-family:var(--head);font-weight:600;font-size:1rem;padding:16px 26px;border-radius:999px;transition:background .2s,color .2s,border-color .2s}
   .btn svg{width:18px;height:18px;transition:transform .2s}
   .btn:hover svg{transform:translateX(3px)}
-  .btn-dark{background:var(--ink);color:var(--paper)}
-  .btn-dark:hover{background:#2c2920}
-  .btn-line{border:1.5px solid var(--ink);color:var(--ink)}
-  .btn-line:hover{background:var(--ink);color:var(--paper)}
   .btn-gold{background:var(--gold);color:var(--ink)}
-  .btn-gold:hover{background:#E9AD27}
-  .arrow-link{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:600;border-bottom:1.5px solid currentColor;padding-bottom:2px}
+  .btn-gold:hover{background:var(--gold-2)}
+  .btn-ink{background:var(--ink);color:var(--paper)}
+  .btn-ink:hover{background:#2b2720}
+  .btn-ghost{border:1.5px solid rgba(245,242,236,.4);color:var(--paper)}
+  .btn-ghost:hover{border-color:var(--paper)}
 
-  /* Black Friday: liga/desliga (classe .bf vem do black-friday.js) */
+  /* Black Friday liga/desliga (classe vem do black-friday.js) */
   html:not(.bf) .bf-only{display:none!important}
   html.bf .bf-off{display:none!important}
-  .cd{display:inline-flex;gap:4px;font-family:var(--head);font-variant-numeric:tabular-nums;font-weight:700}
-  .cd span{display:inline-flex;align-items:baseline;gap:2px}
-  .cd i{font-style:normal;font-weight:500;opacity:.6;font-size:.8em;margin-right:4px}
+  .cd{display:inline-flex;gap:6px;font-family:var(--head);font-variant-numeric:tabular-nums}
+  .cd>span{display:inline-flex;align-items:baseline;gap:2px}
+  .cd b{font-weight:700}
+  .cd i{font-style:normal;opacity:.65;font-size:.82em}
 
-  .bf-bar{position:sticky;top:0;z-index:60;background:var(--ink);color:var(--paper);font-size:.92rem}
-  .bf-bar .wrap{display:flex;align-items:center;justify-content:center;gap:10px 22px;min-height:46px;flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
-  .bf-bar .t{font-family:var(--head);font-weight:800;color:var(--gold);letter-spacing:.01em}
-  .bf-bar .bf-timer .l{opacity:.7;margin-right:8px}
-  .bf-bar a{font-family:var(--head);font-weight:600;display:inline-flex;align-items:center;gap:6px;border-bottom:1.5px solid var(--gold);color:var(--gold)}
+  /* Faixa do topo */
+  .bfbar{position:sticky;top:0;z-index:60;background:var(--gold);color:var(--ink);font-size:.92rem;font-weight:500}
+  .bfbar .wrap{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:6px 22px;min-height:44px;padding-top:7px;padding-bottom:7px}
+  .bfbar strong{font-family:var(--head);font-weight:800;text-transform:uppercase;letter-spacing:.04em}
+  .bfbar .l{opacity:.75;margin-right:6px}
+  .bfbar a{font-family:var(--head);font-weight:700;border-bottom:1.5px solid var(--ink)}
 
-  /* Header */
-  header{position:sticky;top:var(--bfh,0px);z-index:50;background:rgba(245,242,236,.88);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid transparent;transition:border-color .2s}
-  header.scrolled{border-bottom-color:var(--line)}
+  /* Menu */
+  header{position:sticky;top:var(--bfh,0px);z-index:50;background:rgba(20,18,14,.92);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);color:var(--paper);border-bottom:1px solid rgba(245,242,236,.08)}
   .nav{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .brand{font-family:var(--head);font-weight:700;font-size:1.12rem;letter-spacing:-.02em;line-height:1.1}
-  .brand small{display:block;font-weight:500;font-size:.74rem;color:var(--muted);letter-spacing:0}
-  .nav-links{display:flex;align-items:center;gap:30px;font-size:.95rem;font-weight:500}
-  .nav-links a:not(.btn){color:var(--ink-2)}
-  .nav-links a:not(.btn):hover{color:var(--ink)}
+  .brand{font-family:var(--head);font-weight:700;font-size:1.1rem;letter-spacing:-.01em;line-height:1.1}
+  .brand small{display:block;font-weight:500;font-size:.74rem;color:rgba(245,242,236,.55);letter-spacing:0}
+  .nav-links{display:flex;align-items:center;gap:30px;font-size:.95rem}
+  .nav-links a:not(.btn){color:rgba(245,242,236,.75)}
+  .nav-links a:not(.btn):hover{color:var(--paper)}
   .nav-links .btn{padding:11px 20px;font-size:.92rem}
-  .menu-btn{display:none;background:none;border:0;width:44px;height:44px;cursor:pointer;color:var(--ink)}
+  .menu-btn{display:none;width:44px;height:44px;background:none;border:0;color:var(--paper);cursor:pointer}
   .menu-btn svg{width:26px;height:26px}
 
-  /* Hero */
-  .hero{padding:72px 0 96px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
-  .hero h1{font-size:clamp(2.6rem,5.4vw,4.5rem);font-weight:600;letter-spacing:-.028em;margin-bottom:26px}
-  .hero h1 em{font-family:var(--serif);font-style:italic;font-weight:400;letter-spacing:-.01em}
-  .hero .lead{font-size:1.18rem;color:var(--ink-2);max-width:500px;margin-bottom:36px}
-  .hero-actions{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px}
-  .hero-stats{display:flex;gap:44px;margin-top:56px;padding-top:28px;border-top:1px solid var(--line)}
-  .hero-stats b{display:block;font-family:var(--head);font-size:2.2rem;font-weight:600;letter-spacing:-.03em;line-height:1}
-  .hero-stats span{font-size:.92rem;color:var(--muted)}
-  .hero-photo{position:relative}
-  .hero-photo img{width:100%;border-radius:6px}
-  .hero-photo figcaption{margin-top:12px;font-size:.85rem;color:var(--muted)}
-  .bf-pill{display:inline-flex;align-items:center;gap:10px;margin-bottom:28px;padding:7px 14px 7px 7px;border-radius:999px;background:var(--ink);color:var(--paper);font-size:.9rem;font-weight:500}
-  .bf-pill b{background:var(--gold);color:var(--ink);font-family:var(--head);font-weight:700;padding:4px 10px;border-radius:999px;font-size:.8rem}
+  /* Hero: foto ocupando metade da tela, de ponta a ponta */
+  .hero{position:relative;display:grid;grid-template-columns:minmax(0,.95fr) minmax(0,1.05fr);background:var(--ink);color:var(--paper);min-height:min(820px,calc(100svh - var(--bfh,0px) - 72px));min-height:min(820px,calc(100vh - var(--bfh,0px) - 72px))}
+  .hero-copy{display:flex;flex-direction:column;justify-content:center;padding:64px 56px 64px max(32px,calc((100vw - 1240px)/2 + 32px));position:relative;z-index:1}
+  .hero .label{color:var(--gold)}
+  .hero h1{font-size:clamp(2.7rem,4.6vw,4.4rem);margin-bottom:24px}
+  .hero h1 em.s{color:var(--gold)}
+  .hero .lead{font-size:1.16rem;color:rgba(245,242,236,.78);max-width:500px;margin-bottom:34px}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:12px}
+  .proof{display:flex;gap:40px;margin-top:52px;padding-top:26px;border-top:1px solid rgba(245,242,236,.14)}
+  .proof b{display:block;font-family:var(--head);font-size:1.9rem;font-weight:600;letter-spacing:-.02em;line-height:1}
+  .proof span{font-size:.88rem;color:rgba(245,242,236,.6)}
+  .hero-photo{position:relative;overflow:hidden}
+  .hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:58% 28%}
+  .hero-photo::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,var(--ink) 0%,rgba(20,18,14,0) 22%)}
+  .bf-chip{display:inline-flex;align-items:center;gap:10px;width:fit-content;margin-bottom:26px;padding:6px 14px 6px 6px;border-radius:999px;border:1px solid rgba(216,155,19,.6);font-size:.9rem}
+  .bf-chip b{background:var(--gold);color:var(--ink);font-family:var(--head);font-weight:700;font-size:.78rem;padding:4px 10px;border-radius:999px}
 
-  /* Black Friday — seção */
-  .bfs{background:var(--ink);color:var(--paper);padding:96px 0}
-  .bf-top{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end;margin-bottom:56px}
-  .bfs h2{font-size:clamp(3.2rem,8vw,7rem);font-weight:700;letter-spacing:-.035em;line-height:.92}
-  .bfs h2 span{color:var(--gold)}
-  .bfs .sub{font-size:1.2rem;color:rgba(245,242,236,.75);margin-top:22px;max-width:520px}
-  .bfs .sub b{color:var(--paper);font-weight:600}
-  .bf-clock{text-align:right}
-  .bf-clock .l{font-size:.85rem;color:rgba(245,242,236,.6);margin-bottom:10px}
-  .bf-clock .cd{gap:10px}
-  .bf-clock .cd span{flex-direction:column;align-items:center;gap:6px;min-width:72px;padding:14px 6px 10px;border:1px solid rgba(245,242,236,.18);border-radius:10px}
-  .bf-clock .cd b{font-size:2.3rem;font-weight:600;letter-spacing:-.03em;line-height:1}
-  .bf-clock .cd i{font-size:.72rem;margin:0}
-  .bf-list{border-top:1px solid rgba(245,242,236,.18)}
-  .bf-row{display:grid;grid-template-columns:1fr auto auto 40px;gap:28px;align-items:center;padding:24px 4px;border-bottom:1px solid rgba(245,242,236,.18);transition:background .2s,padding .2s}
-  .bf-row:hover{background:rgba(245,242,236,.04);padding-left:14px}
-  .bf-row .n{font-family:var(--head);font-size:1.45rem;font-weight:600;letter-spacing:-.02em}
-  .bf-row s{color:rgba(245,242,236,.45);font-size:1rem}
-  .bf-row .p{font-family:var(--head);font-size:1.8rem;font-weight:700;color:var(--gold);letter-spacing:-.02em;min-width:130px;text-align:right}
-  .bf-row .off{font-family:var(--head);font-size:.82rem;font-weight:700;background:var(--gold);color:var(--ink);padding:3px 9px;border-radius:999px;margin-left:10px;vertical-align:middle}
-  .bf-row svg{width:22px;height:22px;justify-self:end;transition:transform .2s}
-  .bf-row:hover svg{transform:translateX(4px)}
+  /* Black Friday: ofertas */
+  .offers{background:var(--gold);color:var(--ink);padding:80px 0}
+  .offers-top{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:28px;margin-bottom:40px}
+  .offers h2{font-size:clamp(2.8rem,6vw,5.2rem);font-weight:800;letter-spacing:-.035em;line-height:.95;text-transform:uppercase}
+  .offers .sub{font-size:1.15rem;margin-top:14px;max-width:480px}
+  .clock .l{font-size:.85rem;font-weight:600;margin-bottom:10px}
+  .clock .cd{gap:8px}
+  .clock .cd>span{flex-direction:column;align-items:center;gap:4px;min-width:70px;padding:12px 6px 10px;background:var(--ink);color:var(--paper);border-radius:10px}
+  .clock .cd b{font-size:2rem;font-weight:600;color:var(--gold);line-height:1}
+  .clock .cd i{font-size:.7rem}
+  .offer-list{border-top:2px solid var(--ink)}
+  .offer{display:grid;grid-template-columns:1fr auto auto auto 28px;align-items:center;gap:24px;padding:20px 4px;border-bottom:1px solid rgba(20,18,14,.25);transition:padding .2s,background .2s}
+  .offer:hover{padding-left:14px;background:rgba(20,18,14,.05)}
+  .offer .n{font-family:var(--head);font-size:1.35rem;font-weight:600;letter-spacing:-.015em}
+  .offer s{opacity:.6}
+  .offer .p{font-family:var(--head);font-size:1.7rem;font-weight:800;letter-spacing:-.02em}
+  .offer .off{font-family:var(--head);font-weight:700;font-size:.82rem;background:var(--ink);color:var(--gold);padding:4px 10px;border-radius:999px}
+  .offer svg{width:22px;height:22px}
 
   /* Seções */
-  section.s{padding:112px 0}
-  .s-head{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:56px}
-  .s-head h2{font-size:clamp(2.1rem,4vw,3.3rem)}
-  .s-head p{color:var(--ink-2);font-size:1.08rem;max-width:480px}
-
-  /* Sobre */
-  .about{background:var(--paper-2)}
-  .about-grid{display:grid;grid-template-columns:.9fr 1fr;gap:72px;align-items:center}
-  .about-grid img{border-radius:6px;width:100%}
-  .about h2{font-size:clamp(2.1rem,4vw,3.2rem);margin-bottom:24px}
-  .about p{color:var(--ink-2);margin-bottom:16px;font-size:1.06rem}
-  .facts{display:grid;grid-template-columns:1fr 1fr;margin-top:36px;border-top:1px solid var(--line)}
-  .facts div{padding:18px 0;border-bottom:1px solid var(--line)}
-  .facts div:nth-child(odd){padding-right:20px}
-  .facts b{display:block;font-family:var(--head);font-weight:600;font-size:1.02rem}
-  .facts span{color:var(--muted);font-size:.94rem}
+  .sec{padding:104px 0}
+  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px 48px;margin-bottom:48px}
+  .sec-head h2{font-size:clamp(2.2rem,4vw,3.4rem);max-width:620px}
+  .sec-head p{color:var(--text-2);font-size:1.06rem;max-width:420px}
 
   /* Cursos */
   .courses{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
-  .course{grid-column:span 2;position:relative;display:flex;flex-direction:column;min-height:400px;padding:32px;border-radius:8px;color:#fff;background:var(--c);overflow:hidden;transition:transform .25s}
-  .course:nth-child(4),.course:nth-child(5){grid-column:span 3}
-  .course:hover{transform:translateY(-4px)}
-  .course .logo{height:58px;display:flex;align-items:center;margin-bottom:auto}
-  .course .logo img{max-height:58px;width:auto;max-width:220px}
-  .course h3{font-size:1.65rem;margin:40px 0 10px}
-  .course p{color:rgba(255,255,255,.78);font-size:.98rem;max-width:420px}
-  .course .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:26px;padding-top:20px;border-top:1px solid rgba(255,255,255,.18)}
+  .course{grid-column:span 2;position:relative;display:flex;flex-direction:column;border-radius:10px;background:var(--c);color:#fff;overflow:hidden;transition:transform .25s,box-shadow .25s}
+  .course .ph{position:relative;aspect-ratio:16/10;overflow:hidden}
+  .course:nth-child(n+4) .ph{aspect-ratio:16/8}
+  .course .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+  .course:hover .ph img{transform:scale(1.04)}
+  .course .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,var(--c) 100%)}
+  .course .body{display:flex;flex-direction:column;flex:1;padding:4px 28px 26px}
+  .course:nth-child(n+4){grid-column:span 3}
+  .course:hover{transform:translateY(-4px);box-shadow:0 24px 40px -24px rgba(0,0,0,.5)}
+  .course .logo{height:44px;margin-top:-30px;position:relative;z-index:1}
+  .course .logo img{max-height:44px;width:auto;max-width:200px}
+  .course .for{margin-top:18px;font-family:var(--head);font-size:.8rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+  .course h3{font-size:1.6rem;margin:8px 0 10px}
+  .course p{color:rgba(255,255,255,.8);font-size:.98rem;max-width:440px;margin-bottom:22px}
+  .course .foot{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:auto;padding-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.2)}
   .course .go{font-family:var(--head);font-weight:600;display:inline-flex;align-items:center;gap:8px}
   .course .go svg{width:18px;height:18px;transition:transform .2s}
   .course:hover .go svg{transform:translateX(4px)}
   .course .price{font-family:var(--head);display:flex;align-items:baseline;gap:8px}
   .course .price s{opacity:.6;font-size:.92rem}
-  .course .price b{font-size:1.5rem;font-weight:700;color:var(--gold)}
-  .course .tag{position:absolute;top:22px;right:22px;font-family:var(--head);font-size:.78rem;font-weight:700;background:var(--gold);color:var(--ink);padding:5px 11px;border-radius:999px}
+  .course .price b{font-size:1.45rem;font-weight:700;color:var(--gold)}
+  .course .tag{position:absolute;z-index:2;top:16px;right:16px;font-family:var(--head);font-size:.76rem;font-weight:700;background:var(--gold);color:var(--ink);padding:5px 11px;border-radius:999px}
 
-  /* Atuação */
-  .areas{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
-  .area{padding:34px 32px 38px 0;border-bottom:1px solid var(--line)}
-  .area:not(:nth-child(3n+1)){padding-left:32px;border-left:1px solid var(--line)}
-  .area .num{font-family:var(--head);font-size:.85rem;font-weight:600;color:var(--gold-ink);margin-bottom:22px;display:block}
-  .area h3{font-size:1.35rem;margin-bottom:10px}
-  .area p{color:var(--ink-2);font-size:.98rem}
+  /* Sobre: foto da família inteira, sem corte */
+  .about{display:grid;grid-template-columns:1fr 1fr;background:var(--paper-2)}
+  .about-photo img{width:100%;height:auto}
+  .about-copy{display:flex;flex-direction:column;justify-content:center;padding:72px max(32px,calc((100vw - 1240px)/2 + 32px)) 72px 72px}
+  .about h2{font-size:clamp(2.1rem,3.6vw,3.2rem);margin-bottom:22px}
+  .about p{color:var(--text-2);font-size:1.06rem;margin-bottom:14px;max-width:540px}
+  .about-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .about-links a{display:inline-flex;align-items:center;gap:8px;font-family:var(--head);font-weight:600;padding:12px 18px;border:1.5px solid var(--ink);border-radius:999px;transition:background .2s,color .2s}
+  .about-links a:hover{background:var(--ink);color:var(--paper)}
+  .about-links svg{width:16px;height:16px}
 
-  /* Versículo */
-  .verse{padding:120px 0;text-align:center;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-  .verse blockquote{font-family:var(--serif);font-style:italic;font-size:clamp(2rem,4.4vw,3.6rem);line-height:1.18;letter-spacing:-.015em;max-width:940px;margin:0 auto}
-  .verse cite{display:block;margin-top:26px;font-style:normal;font-family:var(--head);font-weight:600;color:var(--muted);font-size:.95rem}
-
-  /* Recursos */
-  .res{display:grid;grid-template-columns:1fr 1fr;gap:16px}
-  .res a{display:flex;flex-direction:column;justify-content:space-between;min-height:240px;padding:36px;border-radius:8px;background:var(--paper-2);transition:background .2s}
-  .res a:hover{background:var(--ink);color:var(--paper)}
-  .res h3{font-size:2rem;margin-bottom:10px}
-  .res p{color:inherit;opacity:.75;max-width:340px}
-  .res .go{font-family:var(--head);font-weight:600;display:inline-flex;align-items:center;gap:8px;margin-top:28px}
-  .res .go svg{width:18px;height:18px}
-
-  /* Por que acompanhar */
-  .why{background:var(--ink);color:var(--paper)}
-  .why-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:80px;align-items:start}
-  .why h2{font-size:clamp(2.1rem,4vw,3.3rem);margin-bottom:24px}
-  .why p{color:rgba(245,242,236,.75);font-size:1.08rem;margin-bottom:14px}
-  .why p b{color:var(--gold);font-weight:600}
-  .why .label{color:rgba(245,242,236,.55)}
-  .why-list div{padding:26px 0;border-top:1px solid rgba(245,242,236,.18)}
-  .why-list div:last-child{border-bottom:1px solid rgba(245,242,236,.18)}
-  .why-list b{display:block;font-family:var(--head);font-size:1.5rem;font-weight:600;letter-spacing:-.02em;margin-bottom:4px}
-  .why-list span{color:rgba(245,242,236,.65)}
+  /* Por que */
+  .why{position:relative;background:var(--ink) url(img/familia-estrada.jpg) center 62%/cover no-repeat;color:var(--paper);padding:150px 0 88px;overflow:hidden}
+  .why::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,18,14,.25) 0%,rgba(20,18,14,.55) 45%,rgba(20,18,14,.92) 100%)}
+  .why .wrap{position:relative}
+  .why h2{font-size:clamp(2.2rem,4.2vw,3.6rem);max-width:820px;margin-bottom:48px}
+  .why h2 em.s{color:var(--gold)}
+  .why-cols{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  .why-cols div{padding-top:22px;border-top:1px solid rgba(245,242,236,.2)}
+  .why-cols b{display:block;font-family:var(--head);font-size:1.4rem;font-weight:600;margin-bottom:6px}
+  .why-cols span{color:rgba(245,242,236,.65)}
 
   /* Igrejas */
-  .churches{border-top:1px solid var(--line)}
-  .church{display:grid;grid-template-columns:1fr 1.4fr auto;gap:24px;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
-  .church h3{font-size:1.25rem}
-  .church address{font-style:normal;color:var(--ink-2);font-size:.96rem;line-height:1.5}
-  .church .links{display:flex;gap:8px}
-  .church .links a{font-size:.88rem;font-weight:500;padding:8px 14px;border:1px solid var(--line);border-radius:999px;transition:background .2s,border-color .2s,color .2s}
-  .church .links a:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-  .contact-cta{margin-top:48px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
-  .contact-cta p{font-family:var(--head);font-size:1.4rem;font-weight:600;letter-spacing:-.02em}
+  .churches{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .church{padding:24px;border:1px solid var(--line);border-radius:10px;background:#FBF9F5}
+  .church h3{font-size:1.15rem;margin-bottom:6px}
+  .church address{font-style:normal;font-size:.92rem;color:var(--text-2);line-height:1.5;min-height:2.8em}
+  .church .links{display:flex;gap:16px;margin-top:16px;font-family:var(--head);font-size:.9rem;font-weight:600}
+  .church .links a{border-bottom:1.5px solid var(--line);transition:border-color .2s}
+  .church .links a:hover{border-color:var(--ink)}
 
-  /* Rodapé */
-  footer{background:var(--ink);color:rgba(245,242,236,.7);padding:72px 0 32px;font-size:.95rem}
-  .foot{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
-  footer .brand{color:var(--paper);margin-bottom:14px}
-  footer .brand small{color:rgba(245,242,236,.55)}
-  footer h5{font-family:var(--head);font-size:.85rem;font-weight:600;color:var(--paper);margin-bottom:14px}
-  footer .col a{display:block;padding:4px 0}
-  footer .col a:hover{color:var(--paper)}
-  .foot-bottom{margin-top:56px;padding-top:24px;border-top:1px solid rgba(245,242,236,.14);font-size:.85rem}
+  /* Chamada final */
+  .final{background:var(--ink);color:var(--paper);padding:96px 0;text-align:center}
+  .final h2{font-size:clamp(2.2rem,4.4vw,3.8rem);max-width:760px;margin:0 auto 18px}
+  .final p{color:rgba(245,242,236,.7);font-size:1.1rem;margin-bottom:32px}
+  .final .cd{color:var(--gold);font-size:1.1rem}
 
-  /* Entrada suave */
-  .js .fade{opacity:0;transform:translateY(16px);transition:opacity .7s ease,transform .7s ease}
+  footer{background:var(--ink);color:rgba(245,242,236,.6);font-size:.92rem;padding:0 0 32px}
+  .foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding-top:32px;border-top:1px solid rgba(245,242,236,.12)}
+  .foot nav{display:flex;flex-wrap:wrap;gap:8px 22px}
+  .foot nav a:hover{color:var(--paper)}
+
+  .js .fade{opacity:0;transform:translateY(14px);transition:opacity .7s ease,transform .7s ease}
   .js .fade.in{opacity:1;transform:none}
   @media(prefers-reduced-motion:reduce){.js .fade{opacity:1;transform:none;transition:none}}
 
-  /* Responsivo */
   @media(max-width:1000px){
-    .hero-grid,.about-grid,.why-grid,.s-head{grid-template-columns:1fr;gap:40px}
-    .hero{padding:40px 0 72px}
-    .bf-top{grid-template-columns:1fr}
-    .bf-clock{text-align:left}
-    .course,.course:nth-child(4),.course:nth-child(5){grid-column:span 3}
+    .course,.course:nth-child(n+4){grid-column:span 3}
     .course:nth-child(5){grid-column:1/-1}
-    .areas{grid-template-columns:1fr 1fr}
-    .area,.area:not(:nth-child(3n+1)){padding:30px 24px 32px 0;border-left:0}
-    .area:nth-child(even){padding-left:24px;border-left:1px solid var(--line)}
-    .church{grid-template-columns:1fr;gap:8px}
-    .foot{grid-template-columns:1fr 1fr}
+    .churches{grid-template-columns:1fr 1fr}
+    .about-copy{padding:56px 32px}
+    .why-cols{grid-template-columns:1fr;gap:0}
+    .why-cols div{padding:20px 0}
   }
-  @media(max-width:760px){
+  @media(max-width:860px){
     body{font-size:16px}
     .wrap{padding:0 20px}
     .nav{height:64px}
-    .nav-links{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:8px 20px 20px}
+    .nav-links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--ink);padding:6px 20px 20px;border-bottom:1px solid rgba(245,242,236,.1)}
     .nav-links.open{display:flex}
-    .nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid var(--line);font-size:1.05rem}
-    .nav-links .btn{margin-top:16px;justify-content:center;padding:15px}
+    .nav-links a:not(.btn){padding:14px 0;border-bottom:1px solid rgba(245,242,236,.1);font-size:1.05rem}
+    .nav-links .btn{margin-top:16px;padding:15px}
     .menu-btn{display:grid;place-items:center}
-    section.s{padding:80px 0}
-    .hero-stats{gap:32px;margin-top:40px}
-    .bfs{padding:72px 0}
-    .bf-top{margin-bottom:36px}
-    .bf-clock .cd{gap:6px}
-    .bf-clock .cd span{min-width:0;flex:1;padding:12px 4px 8px}
-    .bf-clock .cd b{font-size:1.8rem}
-    .bf-clock .cd{display:flex}
-    .bf-row{grid-template-columns:1fr auto;gap:4px 16px;padding:20px 0}
-    .bf-row:hover{padding-left:0}
-    .bf-row .n{font-size:1.15rem;grid-column:1/-1}
-    .bf-row s{font-size:.9rem}
-    .bf-row .p{font-size:1.5rem;min-width:0}
-    .bf-row svg{display:none}
-    .bf-bar .wrap{justify-content:space-between;gap:6px 12px;font-size:.84rem}
-    .bf-bar .bf-txt,.bf-bar .bf-timer .l{display:none}
+    html{scroll-padding-top:calc(var(--bfh,0px) + 68px)}
+    header{top:var(--bfh,0px)}
+    /* Hero no celular: foto em tela cheia, texto por cima na parte de baixo */
+    .hero{display:flex;flex-direction:column;min-height:0}
+    .hero-photo{order:-1}
+    .hero-photo{position:relative;height:min(78svh,620px);height:min(78vh,620px)}
+    .hero-photo img{object-position:56% 22%}
+    .hero-photo::before{background:linear-gradient(180deg,rgba(20,18,14,0) 45%,var(--ink) 100%)}
+    .hero-copy{margin-top:-210px;padding:0 20px 56px}
+    .hero h1{font-size:2.45rem}
+    .hero .lead{font-size:1.04rem}
+    .hero-actions .btn{flex:1 1 100%}
+    .proof{gap:26px;margin-top:40px}
+    .proof b{font-size:1.6rem}
+    .offers{padding:64px 0}
+    .clock .cd{display:flex}
+    .clock .cd>span{flex:1;min-width:0}
+    .clock{width:100%}
+    .offer{grid-template-columns:1fr auto;gap:2px 14px;padding:18px 0}
+    .offer:hover{padding-left:0}
+    .offer .n{grid-column:1/-1;font-size:1.12rem}
+    .offer s{grid-row:2}
+    .offer .p{grid-row:2;font-size:1.45rem;text-align:right}
+    .offer .off,.offer svg{display:none}
+    .sec{padding:76px 0}
     .courses{grid-template-columns:1fr}
-    .course,.course:nth-child(4),.course:nth-child(5){grid-column:auto;min-height:0;padding:28px 24px}
-    .course h3{margin-top:32px}
-    .areas{grid-template-columns:1fr}
-    .area,.area:not(:nth-child(3n+1)),.area:nth-child(even){padding:28px 0;border-left:0}
-    .facts{grid-template-columns:1fr}
-    .facts div:nth-child(odd){padding-right:0}
-    .res{grid-template-columns:1fr}
-    .res a{min-height:0;padding:28px}
-    .verse{padding:88px 0}
-    .foot{grid-template-columns:1fr}
+    .course,.course:nth-child(n+4),.course:nth-child(5){grid-column:auto}
+    .course .ph,.course:nth-child(n+4) .ph{aspect-ratio:16/10}
+    .course .body{padding:4px 22px 24px}
+    .about{grid-template-columns:1fr}
+    .about-copy{padding:52px 20px 64px}
+    .why{padding:120px 0 64px}
+    .churches{grid-template-columns:1fr}
+    .final{padding:72px 0}
+    .bfbar .wrap{gap:4px 14px;font-size:.84rem;justify-content:space-between}
+    .bfbar .t2,.bfbar .l{display:none}
   }
 </style>
 </head>
 <body>
 
-<div class="bf-bar bf-only" role="region" aria-label="Black Friday">
+<div class="bfbar bf-only" role="region" aria-label="Black Friday">
   <div class="wrap">
-    <span class="t">Black Friday</span>
-    <span class="bf-txt">Até 58% OFF em todos os cursos, a partir de R$ 100</span>
+    <strong>Black Friday</strong>
+    <span class="t2">Até 58% OFF em todos os cursos</span>
     <span class="bf-timer"><span class="l">Termina em</span><span class="cd"><span><b data-u="d">00</b><i>d</i></span><span><b data-u="h">00</b><i>h</i></span><span><b data-u="m">00</b><i>m</i></span><span><b data-u="s">00</b><i>s</i></span></span></span>
-    <a href="#black-friday">Ver ofertas →</a>
+    <a href="#ofertas">Ver ofertas</a>
   </div>
 </div>
 
 <header id="top">
   <div class="wrap nav">
-    <a href="/novo/" class="brand">Rodrigo Mocellin<small>Pastor e professor</small></a>
+    <a href="#inicio" class="brand">Rodrigo Mocellin<small>Pastor · Igreja Resgatar</small></a>
     <nav class="nav-links" id="nav">
-      <a href="#sobre">Sobre</a>
       <a href="#cursos">Cursos</a>
-      <a href="#atuacao">Atuação</a>
-      <a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a>
+      <a href="#sobre">Sobre</a>
       <a href="#igrejas">Igrejas</a>
-      <a href="#cursos" class="btn btn-dark bf-off">Ver cursos</a>
-      <a href="#black-friday" class="btn btn-gold bf-only">Black Friday</a>
+      <a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a>
+      <a href="#cursos" class="btn btn-gold bf-off">Ver cursos</a>
+      <a href="#ofertas" class="btn btn-gold bf-only">Black Friday</a>
     </nav>
     <button class="menu-btn" id="menuBtn" aria-label="Abrir menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 8h16M4 16h16"/></svg></button>
   </div>
 </header>
 
-<main>
+<main id="inicio">
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <a href="#black-friday" class="bf-pill bf-only"><b>Black Friday</b> Cursos a partir de R$ 100 →</a>
-      <span class="label">Ministério de ensino · Igreja Resgatar</span>
-      <h1>Servindo à Igreja com a exposição <em>fiel das Escrituras.</em></h1>
-      <p class="lead">Ensino bíblico sólido para pais, famílias e líderes que querem pensar e viver a fé com clareza.</p>
-      <div class="hero-actions">
-        <a href="#cursos" class="btn btn-dark bf-off">Conheça os cursos <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="#black-friday" class="btn btn-dark bf-only">Ver ofertas da Black Friday <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        <a href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener" class="arrow-link">Assistir pregações</a>
-      </div>
-      <div class="hero-stats">
-        <div><b>20+</b><span>anos de ministério</span></div>
-        <div><b>5.000+</b><span>alunos</span></div>
-        <div><b>6</b><span>igrejas Resgatar</span></div>
-      </div>
+  <div class="hero-copy">
+    <a href="#ofertas" class="bf-chip bf-only"><b>Black Friday</b> Cursos a partir de R$ 100 →</a>
+    <span class="label">Cursos online para pais e famílias</span>
+    <h1>Forme sua família pela Palavra, <em class="s">não pela cultura.</em></h1>
+    <p class="lead">Cursos bíblicos e práticos para criar filhos, cuidar do casamento e educar em casa com fidelidade às Escrituras.</p>
+    <div class="hero-actions">
+      <a href="#cursos" class="btn btn-gold bf-off">Escolher meu curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#ofertas" class="btn btn-gold bf-only">Ver ofertas da Black Friday <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a href="#sobre" class="btn btn-ghost">Conheça o pastor</a>
     </div>
-    <figure class="hero-photo">
-      <img src="img/pastor.jpg" width="1000" height="750" alt="Pr. Rodrigo Mocellin em sua biblioteca">
-    </figure>
+    <div class="proof">
+      <div><b>20+</b><span>anos de ministério</span></div>
+      <div><b>5.000+</b><span>alunos</span></div>
+      <div><b>6</b><span>igrejas Resgatar</span></div>
+    </div>
+  </div>
+  <div class="hero-photo">
+    <img src="img/pastor.jpg" width="1000" height="750" alt="Pr. Rodrigo Mocellin em sua biblioteca" fetchpriority="high">
   </div>
 </section>
 
-<section class="bfs bf-only" id="black-friday" aria-label="Black Friday">
+<section class="offers bf-only" id="ofertas" aria-label="Ofertas da Black Friday">
   <div class="wrap">
-    <div class="bf-top">
+    <div class="offers-top">
       <div>
-        <h2>Black<br><span>Friday</span></h2>
-        <p class="sub">Até <b>58% de desconto</b> em todos os cursos, a partir de <b>R$ 100</b>. Só até 30 de novembro.</p>
+        <h2>Black Friday</h2>
+        <p class="sub">Até 58% de desconto em todos os cursos, a partir de R$ 100. Os preços voltam ao normal em 30 de novembro.</p>
       </div>
-      <div class="bf-clock bf-timer">
+      <div class="clock bf-timer">
         <div class="l">A oferta termina em</div>
         <div class="cd"><span><b data-u="d">00</b><i>dias</i></span><span><b data-u="h">00</b><i>horas</i></span><span><b data-u="m">00</b><i>min</i></span><span><b data-u="s">00</b><i>seg</i></span></div>
       </div>
     </div>
-    <div class="bf-list">
-      <a href="/sexualidadecrista/" class="bf-row"><span class="n">Sexualidade Cristã</span><s>R$ 149</s><span class="p">R$ 100<span class="off">-32%</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="/homeschooling/" class="bf-row"><span class="n">Homeschooling ao Alcance de Todos</span><s>R$ 250</s><span class="p">R$ 165<span class="off">-34%</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="/criacaodefilhos/" class="bf-row"><span class="n">Criação de Filhos</span><s>R$ 250</s><span class="p">R$ 165<span class="off">-34%</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="/culpadomeucorpo/" class="bf-row"><span class="n">A Culpa é do Meu Corpo</span><s>R$ 249</s><span class="p">R$ 165<span class="off">-33%</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="/mentecrista/" class="bf-row"><span class="n">Mente Cristã</span><s>R$ 399</s><span class="p">R$ 165<span class="off">-58%</span></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <div class="offer-list">
+      <a class="offer" href="/sexualidadecrista/"><span class="n">Sexualidade Cristã</span><s>R$ 149</s><span class="p">R$ 100</span><span class="off">-32%</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="offer" href="/homeschooling/"><span class="n">Homeschooling ao Alcance de Todos</span><s>R$ 250</s><span class="p">R$ 165</span><span class="off">-34%</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="offer" href="/criacaodefilhos/"><span class="n">Criação de Filhos</span><s>R$ 250</s><span class="p">R$ 165</span><span class="off">-34%</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="offer" href="/culpadomeucorpo/"><span class="n">A Culpa é do Meu Corpo</span><s>R$ 249</s><span class="p">R$ 165</span><span class="off">-33%</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="offer" href="/mentecrista/"><span class="n">Mente Cristã</span><s>R$ 399</s><span class="p">R$ 165</span><span class="off">-58%</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
     </div>
   </div>
 </section>
 
-<section class="s about" id="sobre">
-  <div class="wrap about-grid">
-    <img class="fade" src="img/familia.jpg" width="760" height="760" loading="lazy" alt="Pr. Rodrigo Mocellin, a esposa Danielle e os quatro filhos">
-    <div class="fade">
-      <span class="label">Sobre</span>
-      <h2>Quem é o Pastor Rodrigo Mocellin</h2>
-      <p>Pastor Rodrigo Mocellin é uma voz cristã voltada à formação de famílias, educação dos filhos, homeschooling, aconselhamento bíblico e análise da cultura à luz da fé cristã.</p>
-      <p>Pastor e fundador da Igreja Resgatar, em Guaratinguetá, no Vale do Paraíba, sua atuação nasce do ministério pastoral e do cuidado com famílias cristãs.</p>
-      <div class="facts">
-        <div><b>Pastor e fundador</b><span>Igreja Resgatar</span></div>
-        <div><b>Casado com Danielle</b><span>Pai de 4 filhos</span></div>
-        <div><b>Educação cristã</b><span>Homeschooling</span></div>
-        <div><b>Guaratinguetá</b><span>Vale do Paraíba · SP</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="s" id="cursos">
+<section class="sec" id="cursos">
   <div class="wrap">
-    <div class="s-head fade">
-      <div><span class="label">Cursos online</span><h2>Cinco cursos, uma mesma missão.</h2></div>
-      <p>Formação bíblica para glorificar a Deus e transformar vidas — da mente à família, do lar à cultura.</p>
+    <div class="sec-head fade">
+      <div><span class="label">Os cursos</span><h2>Por onde você quer começar?</h2></div>
+      <p>Cinco cursos online, cada um para uma necessidade real da família. Assista no seu ritmo, pelo celular ou computador.</p>
     </div>
     <div class="courses">
-      <a class="course fade" href="/sexualidadecrista/" style="--c:#231A0B">
+      <a class="course fade" href="/criacaodefilhos/" style="--c:#3B0D72">
         <span class="tag bf-only">Black Friday</span>
-        <div class="logo"><img src="img/logo-sexualidade.png" width="370" height="120" loading="lazy" alt="Sexualidade Cristã"></div>
-        <h3>Sexualidade Cristã</h3>
-        <p>Sexualidade, casamento e pureza segundo as Escrituras.</p>
-        <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 149</s><b>R$ 100</b></span></div>
+        <div class="ph"><img src="img/curso-criacao.jpg" width="1000" height="753" loading="lazy" alt="Pai conversando com os filhos em casa"></div>
+        <div class="body">
+        <div class="logo"><img src="img/logo-criacao.png" width="728" height="120" loading="lazy" alt="Criação de Filhos"></div>
+        <span class="for">Para pais</span>
+        <h3>Criação de Filhos</h3>
+        <p>Discipule seus filhos com firmeza e graça, segundo princípios bíblicos.</p>
+        <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 250</s><b>R$ 165</b></span></div>
+        </div>
       </a>
       <a class="course fade" href="/homeschooling/" style="--c:#0F3274">
         <span class="tag bf-only">Black Friday</span>
+        <div class="ph"><img src="img/curso-homeschooling.jpg" width="1000" height="753" loading="lazy" alt="Mãe ensinando os filhos na mesa da cozinha"></div>
+        <div class="body">
         <div class="logo"><img src="img/logo-homeschooling.png" width="274" height="78" loading="lazy" alt="Homeschooling ao Alcance de Todos"></div>
+        <span class="for">Para quem quer educar em casa</span>
         <h3>Homeschooling ao Alcance de Todos</h3>
-        <p>Educação cristã para famílias que ensinam em casa.</p>
+        <p>O passo a passo para educar seus filhos em casa, mesmo sem experiência.</p>
         <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 250</s><b>R$ 165</b></span></div>
+        </div>
       </a>
-      <a class="course fade" href="/criacaodefilhos/" style="--c:#3B0D72">
+      <a class="course fade" href="/sexualidadecrista/" style="--c:#231A0B">
         <span class="tag bf-only">Black Friday</span>
-        <div class="logo"><img src="img/logo-criacao.png" width="728" height="120" loading="lazy" alt="Criação de Filhos"></div>
-        <h3>Criação de Filhos</h3>
-        <p>Formação bíblica para pais que desejam discipular seus filhos.</p>
-        <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 250</s><b>R$ 165</b></span></div>
+        <div class="ph"><img src="img/curso-sexualidade.jpg" width="1000" height="753" loading="lazy" alt="Mãos de um casal sobre uma Bíblia aberta"></div>
+        <div class="body">
+        <div class="logo"><img src="img/logo-sexualidade.png" width="370" height="120" loading="lazy" alt="Sexualidade Cristã"></div>
+        <span class="for">Para casais e jovens</span>
+        <h3>Sexualidade Cristã</h3>
+        <p>Sexualidade, casamento e pureza à luz das Escrituras, sem tabus.</p>
+        <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 149</s><b>R$ 100</b></span></div>
+        </div>
       </a>
       <a class="course fade" href="/culpadomeucorpo/" style="--c:#0B2C44">
         <span class="tag bf-only">Black Friday</span>
+        <div class="ph"><img src="img/curso-culpa.jpg" width="1000" height="753" loading="lazy" alt="Jovem tranquila à janela com uma Bíblia"></div>
+        <div class="body">
         <div class="logo"><img src="img/logo-culpa.png" width="343" height="120" loading="lazy" alt="A Culpa é do Meu Corpo"></div>
+        <span class="for">Para quem luta com a própria imagem</span>
         <h3>A Culpa é do Meu Corpo</h3>
-        <p>Reflexões bíblicas sobre corpo, imagem e identidade.</p>
+        <p>Corpo, imagem e identidade vistos pela Bíblia, não pelo espelho.</p>
         <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 249</s><b>R$ 165</b></span></div>
+        </div>
       </a>
       <a class="course fade" href="/mentecrista/" style="--c:#0F3B31">
         <span class="tag bf-only">Black Friday</span>
+        <div class="ph"><img src="img/curso-mente.jpg" width="1000" height="753" loading="lazy" alt="Mesa de estudo com Bíblia, caderno e livros"></div>
+        <div class="body">
         <div class="logo"><img src="img/logo-mente.png" width="340" height="120" loading="lazy" alt="Mente Cristã"></div>
+        <span class="for">Para quem quer pensar biblicamente</span>
         <h3>Mente Cristã</h3>
-        <p>Formação de uma cosmovisão cristã para viver e pensar biblicamente.</p>
+        <p>Uma cosmovisão cristã para interpretar o mundo e viver a fé com coerência.</p>
         <div class="foot"><span class="go">Ver curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span><span class="price bf-only"><s>R$ 399</s><b>R$ 165</b></span></div>
+        </div>
       </a>
     </div>
   </div>
 </section>
 
-<section class="s" id="atuacao" style="padding-top:0">
+<section class="about" id="sobre">
+  <div class="about-photo"><img src="img/familia.jpg" width="760" height="760" loading="lazy" alt="Pr. Rodrigo Mocellin, a esposa Danielle e os quatro filhos"></div>
+  <div class="about-copy fade">
+    <span class="label">Quem ensina</span>
+    <h2>Pastor, marido e <em class="s">pai de quatro filhos.</em></h2>
+    <p>Rodrigo Mocellin é pastor e fundador da Igreja Resgatar, em Guaratinguetá (SP). Há mais de 20 anos ensina as Escrituras com foco na família: criação de filhos, casamento, educação cristã e cultura.</p>
+    <p>Casado com Danielle, ensina a partir da própria caminhada como pai e pastor — com fidelidade bíblica e linguagem clara.</p>
+    <div class="about-links">
+      <a href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener">Assistir pregações <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+      <a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<section class="why">
   <div class="wrap">
-    <div class="s-head fade">
-      <div><span class="label">Áreas de atuação</span><h2>Conteúdo para famílias cristãs.</h2></div>
-      <p>Reflexões para ajudar pais e mães a pensarem com mais clareza e fidelidade bíblica.</p>
-    </div>
-    <div class="areas">
-      <div class="area fade"><span class="num">01</span><h3>Criação de filhos</h3><p>Princípios bíblicos para educar os filhos com sabedoria, firmeza e graça, na disciplina e admoestação do Senhor.</p></div>
-      <div class="area fade"><span class="num">02</span><h3>Educação e homeschooling</h3><p>A educação como responsabilidade dos pais — formando caráter, visão de mundo e temor do Senhor, dentro do próprio lar.</p></div>
-      <div class="area fade"><span class="num">03</span><h3>Aconselhamento bíblico</h3><p>Orientação pastoral fundamentada nas Escrituras para as questões concretas da vida cristã e familiar.</p></div>
-      <div class="area fade"><span class="num">04</span><h3>Cultura e sociedade</h3><p>Uma visão cristã da cultura, da sociedade e da moral, mostrando como a fé deve orientar a forma como a família enxerga o mundo.</p></div>
-      <div class="area fade"><span class="num">05</span><h3>Ensino teológico</h3><p>Exposição fiel das Escrituras e formação teológica sólida para leigos e líderes, no púlpito e nos cursos.</p></div>
-      <div class="area fade"><span class="num">06</span><h3>Vida familiar</h3><p>O cuidado com o casamento e o lar cristão como base para a formação da próxima geração na fé.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="verse">
-  <div class="wrap fade">
-    <blockquote>“A Palavra de Deus continua sendo suficiente para transformar vidas.”</blockquote>
-    <cite>2 Timóteo 3.16-17</cite>
-  </div>
-</section>
-
-<section class="s why">
-  <div class="wrap why-grid">
-    <div class="fade">
-      <span class="label">Por que acompanhar</span>
-      <h2>A família cristã precisa de mais do que boas intenções.</h2>
-      <p>Ela não pode ser formada por ideias soltas, pressões culturais ou respostas superficiais.</p>
-      <p>Precisa de <b>direção</b>, <b>fundamento</b> e <b>coragem</b> para viver segundo a Palavra de Deus.</p>
-    </div>
-    <div class="why-list fade">
+    <h2 class="fade">A família cristã precisa de mais do que boas intenções. Precisa de <em class="s">direção, fundamento e coragem.</em></h2>
+    <div class="why-cols fade">
       <div><b>Direção</b><span>Um norte bíblico para as decisões do lar.</span></div>
       <div><b>Fundamento</b><span>Base sólida nas Escrituras, não na cultura.</span></div>
       <div><b>Coragem</b><span>Firmeza para viver a fé em meio à cultura.</span></div>
@@ -432,39 +395,31 @@
   </div>
 </section>
 
-<section class="s" id="recursos">
+<section class="sec" id="igrejas">
   <div class="wrap">
-    <div class="res">
-      <a class="fade" href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener"><div><h3>Livraria</h3><p>Livros que edificam e equipam líderes para o Reino.</p></div><span class="go">Ver livros <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
-      <a class="fade" href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener"><div><h3>Sermões</h3><p>Exposição fiel das Escrituras no YouTube.</p></div><span class="go">Assistir pregações <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M9 7h8v8"/></svg></span></a>
+    <div class="sec-head fade">
+      <div><span class="label">Igrejas Resgatar</span><h2>Visite uma igreja perto de você.</h2></div>
+      <p>Seis igrejas no Vale do Paraíba. Fale com a gente: <a href="mailto:contato@rodrigomocellin.com.br" style="border-bottom:1.5px solid currentColor">contato@rodrigomocellin.com.br</a></p>
     </div>
+    <div class="churches" id="churchList"></div>
   </div>
 </section>
 
-<section class="s" id="igrejas" style="padding-top:0">
-  <div class="wrap">
-    <div class="s-head fade">
-      <div><span class="label">Onde estamos</span><h2>Igrejas Resgatar.</h2></div>
-      <p>Seis igrejas no Vale do Paraíba. Encontre a mais perto de você.</p>
-    </div>
-    <div class="churches" id="churchList"></div>
-    <div class="contact-cta fade">
-      <p>Ficou com alguma dúvida?</p>
-      <a href="mailto:contato@rodrigomocellin.com.br" class="btn btn-line">Fale conosco</a>
-    </div>
+<section class="final">
+  <div class="wrap fade">
+    <h2>Dê o próximo passo pela sua família.</h2>
+    <p class="bf-off">Escolha um curso e comece hoje, no seu ritmo.</p>
+    <p class="bf-only bf-timer">Os preços de Black Friday acabam em <span class="cd"><span><b data-u="d">00</b><i>d</i></span><span><b data-u="h">00</b><i>h</i></span><span><b data-u="m">00</b><i>m</i></span><span><b data-u="s">00</b><i>s</i></span></span></p>
+    <a href="#cursos" class="btn btn-gold bf-off">Escolher meu curso <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+    <a href="#ofertas" class="btn btn-gold bf-only">Aproveitar a Black Friday <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
   </div>
 </section>
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="foot">
-      <div><div class="brand">Rodrigo Mocellin<small>Pastor e professor</small></div><p>Servindo à Igreja por meio da exposição fiel das Escrituras.</p></div>
-      <div class="col"><h5>Cursos</h5><a href="/sexualidadecrista/">Sexualidade Cristã</a><a href="/homeschooling/">Homeschooling</a><a href="/criacaodefilhos/">Criação de Filhos</a><a href="/culpadomeucorpo/">A Culpa é do Meu Corpo</a><a href="/mentecrista/">Mente Cristã</a></div>
-      <div class="col"><h5>Navegação</h5><a href="#sobre">Sobre</a><a href="#atuacao">Atuação</a><a href="#igrejas">Igrejas</a><a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a><a href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener">YouTube</a></div>
-      <div class="col"><h5>Contato</h5><a href="mailto:contato@rodrigomocellin.com.br">contato@rodrigomocellin.com.br</a><span>Vale do Paraíba · SP</span></div>
-    </div>
-    <div class="foot-bottom">© 2026 Pr. Rodrigo Mocellin. Todos os direitos reservados.</div>
+  <div class="wrap foot">
+    <span>© 2026 Pr. Rodrigo Mocellin · Vale do Paraíba, SP</span>
+    <nav><a href="#cursos">Cursos</a><a href="#sobre">Sobre</a><a href="#igrejas">Igrejas</a><a href="https://livrariadorodrigo.com.br" target="_blank" rel="noopener">Livraria</a><a href="https://www.youtube.com/@PastorRodrigoMocellin" target="_blank" rel="noopener">YouTube</a><a href="mailto:contato@rodrigomocellin.com.br">Contato</a></nav>
   </div>
 </footer>
 
@@ -472,35 +427,29 @@
 (function(){
   // Igrejas (mesmos dados do site atual)
   var igrejas = [
-    ['Resgatar Guaratinguetá','Av. Zacarias Jorge Boueri, 116 — Chácara Selles','Guaratinguetá — SP, CEP 12505-512','igreja_resgatar'],
-    ['Resgatar Moreira','R. Benedito Marcelino da Silva, 145 — Laerte Assunção','Pindamonhangaba — SP, CEP 12440-600','resgatarmoreira'],
-    ['Resgatar Pindamonhangaba','R. Ryoiti Yassuda, 628 — Andrade','Pindamonhangaba — SP, CEP 12402-530','igrejaresgatarpinda'],
-    ['Resgatar Taubaté','R. Dr. Silvino Canúto de Abreu, 31 — Jardim Sandra Maria','Taubaté — SP, CEP 12081-160','resgatartaubate'],
-    ['Resgatar Lorena','R. Cel. José Vicente, 481 — Cidade Industrial','Lorena — SP, CEP 12609-350','resgatarlorena'],
-    ['Resgatar Cruzeiro','R. José de Moraes, 199 — Retiro da Mantiqueira','Cruzeiro — SP, CEP 12711-640','resgatarcruzeiro']
+    ['Guaratinguetá','Av. Zacarias Jorge Boueri, 116 — Chácara Selles','Guaratinguetá — SP, CEP 12505-512','igreja_resgatar'],
+    ['Moreira','R. Benedito Marcelino da Silva, 145 — Laerte Assunção','Pindamonhangaba — SP, CEP 12440-600','resgatarmoreira'],
+    ['Pindamonhangaba','R. Ryoiti Yassuda, 628 — Andrade','Pindamonhangaba — SP, CEP 12402-530','igrejaresgatarpinda'],
+    ['Taubaté','R. Dr. Silvino Canúto de Abreu, 31 — Jardim Sandra Maria','Taubaté — SP, CEP 12081-160','resgatartaubate'],
+    ['Lorena','R. Cel. José Vicente, 481 — Cidade Industrial','Lorena — SP, CEP 12609-350','resgatarlorena'],
+    ['Cruzeiro','R. José de Moraes, 199 — Retiro da Mantiqueira','Cruzeiro — SP, CEP 12711-640','resgatarcruzeiro']
   ];
   var list = document.getElementById('churchList');
   igrejas.forEach(function(c){
     var q = encodeURIComponent(c[1].replace(' — ', ', ') + ', ' + c[2].replace(' — ', ' - ').replace(', CEP', ','));
     var el = document.createElement('div');
     el.className = 'church fade';
-    el.innerHTML = '<h3>' + c[0] + '</h3><address>' + c[1] + '<br>' + c[2] + '</address>' +
+    el.innerHTML = '<h3>Resgatar ' + c[0] + '</h3><address>' + c[1] + '<br>' + c[2] + '</address>' +
       '<div class="links"><a href="https://www.instagram.com/' + c[3] + '/" target="_blank" rel="noopener">Instagram</a>' +
       '<a href="https://waze.com/ul?q=' + q + '&navigate=yes" target="_blank" rel="noopener">Waze</a>' +
-      '<a href="https://www.google.com/maps/search/?api=1&query=' + q + '" target="_blank" rel="noopener">Maps</a></div>';
+      '<a href="https://www.google.com/maps/search/?api=1&query=' + q + '" target="_blank" rel="noopener">Google Maps</a></div>';
     list.appendChild(el);
   });
 
-  // Menu no celular
   var btn = document.getElementById('menuBtn'), nav = document.getElementById('nav');
   btn.addEventListener('click', function(){ var o = nav.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
   nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('open'); }); });
 
-  // Linha sob o menu ao rolar
-  var hdr = document.getElementById('top');
-  addEventListener('scroll', function(){ hdr.classList.toggle('scrolled', scrollY > 10); }, {passive:true});
-
-  // Entrada suave
   if ('IntersectionObserver' in window) {
     document.documentElement.classList.add('js');
     var io = new IntersectionObserver(function(es){ es.forEach(function(e){ if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }); }, {rootMargin:'0px 0px -8% 0px'});
