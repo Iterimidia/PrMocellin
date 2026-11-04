@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /ferramentas/
+
+Sitemap: https://prmocellin.netlify.app/sitemap.xml

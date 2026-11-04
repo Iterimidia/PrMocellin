@@ -15,3 +15,10 @@ Site estático do Pr. Rodrigo Mocellin, publicado no Netlify a partir da raiz do
   ```
   python3 ferramentas/gerar_cursos.py
   ```
+
+## Google e IAs
+
+- `sitemap.xml` e `robots.txt`: lista de páginas para o Google.
+- `llms.txt`: resumo do site para assistentes de IA (ChatGPT, Claude, Perplexity...). Atualize se mudar preços ou cursos.
+- Dados estruturados (schema.org) ficam no `<head>` de cada página: pessoa, igrejas e cursos na home; curso, perguntas frequentes e trilha nas páginas de curso.
+- Favicons: `favicon.ico`, `favicon-96.png`, `icon-192.png`, `icon-512.png`, `apple-touch-icon.png` e `site.webmanifest`.

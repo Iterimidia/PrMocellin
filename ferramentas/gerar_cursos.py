@@ -38,6 +38,29 @@ def cd(curto=False):
             '<span><b data-u="m">00</b><i>min</i></span><span><b data-u="s">00</b><i>seg</i></span></div>')
 
 
+def dados_estruturados(slug, d):
+    """Schema.org (JSON-LD) para Google e IAs: curso, perguntas frequentes e trilha de navegação."""
+    c, accent, accent_ink, foto, oficial, promo, publico = CONFIG[slug]
+    url = f"{SITE}/{slug}/"
+    pastor = {"@type": "Person", "@id": f"{SITE}/#pastor", "name": "Rodrigo Mocellin", "url": f"{SITE}/"}
+    ld = {"@context": "https://schema.org", "@graph": [
+        {"@type": "Course", "@id": url + "#curso", "name": d["name"], "description": d["description"], "url": url,
+         "inLanguage": "pt-BR", "image": f"{SITE}/assets/img/{foto}.jpg", "provider": pastor,
+         "audience": {"@type": "Audience", "audienceType": publico},
+         "teaches": [t for t, _ in d["about_feats"]],
+         "syllabusSections": [{"@type": "Syllabus", "name": t, "description": p} for t, p in d["mods"]],
+         "hasCourseInstance": {"@type": "CourseInstance", "courseMode": "Online", "instructor": pastor},
+         "offers": {"@type": "Offer", "category": "Paid", "price": f"{oficial}.00", "priceCurrency": "BRL",
+                    "url": url + "#inscrever", "availability": "https://schema.org/InStock"}},
+        {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": q, "acceptedAnswer": {"@type": "Answer", "text": a}}
+                                             for q, a in d["faq"]]},
+        {"@type": "BreadcrumbList", "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": "Início", "item": f"{SITE}/"},
+            {"@type": "ListItem", "position": 2, "name": d["name"], "item": url}]},
+    ]}
+    return json.dumps(ld, ensure_ascii=False, indent=1).replace("</", "<\\/")
+
+
 def pagina(slug, d):
     c, accent, accent_ink, foto, oficial, promo, publico = CONFIG[slug]
     pct = int((oficial - promo) * 100 / oficial)
@@ -71,7 +94,15 @@ def pagina(slug, d):
 <title>{titulo}</title>
 <meta name="description" content="{desc}">
 <link rel="canonical" href="{SITE}/{slug}/">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2314120E'/%3E%3Ctext x='16' y='22' font-family='Arial' font-weight='700' font-size='15' fill='%23D89B13' text-anchor='middle'%3ERM%3C/text%3E%3C/svg%3E">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="author" content="Pr. Rodrigo Mocellin">
+<meta name="theme-color" content="{c}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/icon-192.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" as="image" href="/assets/img/{foto}.jpg" fetchpriority="high">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Pr. Rodrigo Mocellin">
@@ -87,8 +118,12 @@ def pagina(slug, d):
 <link rel="stylesheet" href="/assets/curso.css">
 <style>:root{{--c:{c};--accent:{accent};--accent-ink:{accent_ink}}}</style>
 <script src="/black-friday.js"></script>
+<script type="application/ld+json">
+{dados_estruturados(slug, d)}
+</script>
 </head>
 <body>
+<a class="skip" href="#inicio">Pular para o conteúdo</a>
 
 <div class="bfbar bf-only" role="region" aria-label="Black Friday">
   <div class="wrap">
@@ -102,7 +137,7 @@ def pagina(slug, d):
 <header class="site-header">
   <div class="wrap nav">
     <a href="#inicio" class="brand"><img src="/assets/img/{slug}-logo.png" alt="{e(nome)}"></a>
-    <nav class="nav-links" id="nav">
+    <nav class="nav-links" id="nav" aria-label="Menu principal">
       <a href="#curso">O curso</a>
       <a href="#conteudo">Conteúdo</a>
       <a href="#professor">Professor</a>

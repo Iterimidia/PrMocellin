@@ -47,7 +47,7 @@
     });
 
     // A faixa do topo fica fixa; o menu fica logo abaixo dela
-    var bar = document.querySelector('.bf-bar');
+    var bar = document.querySelector('.bfbar');
     function medir(){ if (bar) root.style.setProperty('--bfh', bar.offsetHeight + 'px'); }
     medir();
     window.addEventListener('resize', medir);

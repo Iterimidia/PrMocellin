@@ -8,8 +8,38 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Imagens, ícones e estilos: cache de 7 dias no navegador
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
 # A prévia /novo/ virou a home oficial
 [[redirects]]
   from = "/novo/*"
   to = "/"
   status = 301
+
+# Arquivos internos não ficam públicos
+[[redirects]]
+  from = "/ferramentas/*"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/PENDENCIAS.md"
+  to = "/404.html"
+  status = 404
+  force = true
+
+[[redirects]]
+  from = "/README.md"
+  to = "/404.html"
+  status = 404
+  force = true
