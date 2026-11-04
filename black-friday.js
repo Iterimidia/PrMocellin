@@ -9,11 +9,11 @@
     inicio: null, // ex.: "2026-11-27T00:00:00-03:00"
     fim: null,    // ex.: "2026-11-30T23:59:59-03:00"
     links: {
-      sexualidadecrista: "",
-      homeschooling: "",
-      criacaodefilhos: "",
-      culpadomeucorpo: "",
-      mentecrista: ""
+      sexualidadecrista: "https://sun.eduzz.com/2194009",
+      homeschooling: "https://sun.eduzz.com/1686279",
+      criacaodefilhos: "https://sun.eduzz.com/1704004",
+      culpadomeucorpo: "https://sun.eduzz.com/1702808",
+      mentecrista: "https://sun.eduzz.com/7WX5YANO0A"
     }
   };
 
@@ -37,25 +37,36 @@
 
   root.classList.add('bf');
 
+  // Só na prévia sem data definida: contador de demonstração (3 dias)
+  if (preview && !fim) fim = Date.now() + 3 * 86400000;
+
   document.addEventListener('DOMContentLoaded', function(){
     document.querySelectorAll('[data-bf-link]').forEach(function(a){
       var url = BF.links[a.getAttribute('data-bf-link')];
       if (url) a.href = url;
     });
 
+    // A faixa do topo fica fixa; o menu fica logo abaixo dela
+    var bar = document.querySelector('.bf-bar');
+    function medir(){ if (bar) root.style.setProperty('--bfh', bar.offsetHeight + 'px'); }
+    medir();
+    window.addEventListener('resize', medir);
+
     var timers = document.querySelectorAll('.bf-timer');
     if (!fim || fim <= Date.now()) {
       timers.forEach(function(t){ t.style.display = 'none'; });
+      medir();
       return;
     }
     function pad(n){ return n < 10 ? '0' + n : '' + n; }
     function tick(){
       var s = Math.max(0, Math.floor((fim - Date.now()) / 1000));
       if (s === 0 && !preview) { location.reload(); return; }
-      var d = Math.floor(s / 86400), h = Math.floor(s % 86400 / 3600),
-          m = Math.floor(s % 3600 / 60), sec = s % 60;
-      var txt = (d ? d + 'd ' : '') + pad(h) + 'h ' + pad(m) + 'm ' + pad(sec) + 's';
-      timers.forEach(function(t){ t.querySelector('b').textContent = txt; });
+      var v = { d: pad(Math.floor(s / 86400)), h: pad(Math.floor(s % 86400 / 3600)),
+                m: pad(Math.floor(s % 3600 / 60)), s: pad(s % 60) };
+      timers.forEach(function(t){
+        t.querySelectorAll('[data-u]').forEach(function(el){ el.textContent = v[el.getAttribute('data-u')]; });
+      });
     }
     tick();
     setInterval(tick, 1000);

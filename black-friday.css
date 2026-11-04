@@ -1,31 +1,98 @@
 /* Black Friday — some/aparece conforme a classe .bf no <html> (definida por black-friday.js) */
 html:not(.bf) .bf-only{display:none!important}
 html.bf .bf-off{display:none!important}
+html.bf{scroll-padding-top:calc(var(--bfh,0px) + 80px)}
 
 .bf-tag{display:inline-block;background:#F2A900;color:#000;font-family:inherit;font-weight:900;font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;padding:5px 10px;border-radius:4px;line-height:1.2}
 
-/* Faixa do topo */
-.bf-bar{position:relative;z-index:85;background:#000;color:#fff;border-bottom:1px solid rgba(242,169,0,.4);font-size:.84rem;line-height:1.35}
-.bf-bar-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 20px;text-align:center}
+/* Contador em caixas */
+.bf-timer{display:inline-flex;align-items:center;gap:10px;font-variant-numeric:tabular-nums}
+.bf-timer-l{font-size:.72rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+.bf-cd{display:inline-flex;gap:5px}
+.bf-cd>span{display:flex;flex-direction:column;align-items:center;justify-content:center;min-width:42px;padding:5px 4px 4px;background:#1a1a1a;border:1px solid rgba(242,169,0,.45);border-radius:6px;line-height:1}
+.bf-cd b{font-size:1.05rem;font-weight:800;color:#fff}
+.bf-cd i{font-style:normal;font-size:.55rem;letter-spacing:.1em;text-transform:uppercase;color:#F2A900;margin-top:3px}
+
+/* Faixa do topo (fixa junto com o menu) */
+.bf-bar{position:sticky;top:0;z-index:56;background:#000;color:#fff;border-bottom:2px solid #F2A900;font-size:.9rem;line-height:1.35;box-shadow:0 8px 24px -12px rgba(0,0,0,.7)}
+html.bf header{top:var(--bfh,0px)}
+.bf-bar-in{max-width:1240px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:8px 24px;text-align:center}
+.bf-bar-title{font-weight:900;font-size:1.25rem;letter-spacing:.1em;text-transform:uppercase;color:#F2A900;white-space:nowrap}
 .bf-bar-txt{color:rgba(255,255,255,.92)}
-.bf-bar-txt strong{color:#F2A900}
-.bf-timer{font-variant-numeric:tabular-nums;color:rgba(255,255,255,.7)}
-.bf-timer b{color:#fff;font-weight:700}
-.bf-bar-btn{display:inline-block;background:#F2A900;color:#000!important;font-weight:800;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;padding:8px 16px;border-radius:4px;text-decoration:none;transition:background .2s}
-.bf-bar-btn:hover{background:#FFC13D}
+.bf-bar-txt strong{color:#F2A900;font-weight:800}
+.bf-bar-btn{display:inline-block;background:#F2A900;color:#000!important;font-weight:900;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;padding:11px 20px;border-radius:5px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s}
+.bf-bar-btn:hover{background:#FFC13D;transform:translateY(-1px)}
+
+/* Selo no hero da home */
+.bf-hero-badge{display:inline-flex;align-items:center;gap:12px;margin-bottom:22px;padding:6px 16px 6px 6px;background:rgba(0,0,0,.55);border:1px solid #F2A900;border-radius:50px;color:#fff!important;font-size:.88rem;font-weight:600;text-decoration:none;transition:background .2s}
+.bf-hero-badge .bf-tag{border-radius:50px;padding:6px 12px}
+.bf-hero-badge strong{color:#F2A900}
+.bf-hero-badge:hover{background:rgba(0,0,0,.8)}
+
+/* Seção Black Friday da home */
+.bf-hero{position:relative;background:#000;color:#fff;padding:72px 20px 80px;text-align:center;overflow:hidden;border-top:3px solid #F2A900;border-bottom:3px solid #F2A900}
+.bf-hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 0%,rgba(242,169,0,.22),transparent 70%);pointer-events:none}
+.bf-hero-in{position:relative;max-width:1100px;margin:0 auto}
+.bf-kick{display:inline-block;font-size:.76rem;font-weight:800;letter-spacing:.22em;text-transform:uppercase;color:#F2A900;margin-bottom:14px}
+.bf-h{font-family:inherit;font-weight:900;font-size:clamp(3rem,9vw,6.2rem);line-height:.95;letter-spacing:.02em;text-transform:uppercase;color:#fff;margin:0 0 18px}
+.bf-h span{color:#F2A900}
+.bf-sub{font-size:clamp(1.05rem,2.2vw,1.35rem);color:rgba(255,255,255,.88);max-width:760px;margin:0 auto 28px;line-height:1.5}
+.bf-sub strong{color:#F2A900;font-weight:800}
+.bf-hero .bf-timer{flex-direction:column;gap:12px;margin-bottom:36px}
+.bf-hero .bf-cd{gap:10px}
+.bf-hero .bf-cd>span{min-width:76px;padding:12px 8px 10px;border-radius:10px;border-width:2px}
+.bf-hero .bf-cd b{font-size:2.1rem}
+.bf-hero .bf-cd i{font-size:.66rem;margin-top:6px}
+.bf-offers{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin:0 0 36px}
+.bf-offer{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:12px;padding:22px 14px 18px;background:#111;border:1px solid rgba(242,169,0,.35);border-radius:12px;color:#fff!important;text-decoration:none;transition:border-color .2s,transform .2s,background .2s}
+.bf-offer:hover{border-color:#F2A900;background:#161616;transform:translateY(-3px)}
+.bf-offer-pct{position:absolute;top:-11px;left:50%;transform:translateX(-50%);background:#F2A900;color:#000;font-weight:900;font-size:.78rem;padding:3px 10px;border-radius:50px;white-space:nowrap}
+.bf-offer-n{font-weight:700;font-size:.98rem;line-height:1.25}
+.bf-offer-p s{display:block;color:rgba(255,255,255,.5);font-size:.85rem}
+.bf-offer-p strong{display:block;color:#F2A900;font-size:1.6rem;font-weight:900;line-height:1.1}
+.bf-cta{display:inline-block;background:#F2A900;color:#000!important;font-weight:900;font-size:1rem;letter-spacing:.08em;text-transform:uppercase;padding:18px 36px;border-radius:6px;text-decoration:none;box-shadow:0 18px 40px -14px rgba(242,169,0,.6);transition:background .2s,transform .2s}
+.bf-cta:hover{background:#FFC13D;transform:translateY(-2px)}
 
 /* Cards de curso da home */
 .ccard .bf-tag{position:absolute;top:16px;right:16px;z-index:2;box-shadow:0 6px 18px -6px rgba(0,0,0,.6)}
-.ccard .bf-price{display:flex;align-items:baseline;justify-content:center;gap:10px;margin:0 0 22px}
+.ccard .bf-price{display:flex;align-items:baseline;justify-content:center;flex-wrap:wrap;gap:6px 10px;margin:0 0 22px}
 .ccard .bf-price s{color:rgba(255,255,255,.6);font-size:.95rem}
-.ccard .bf-price strong{color:#F2A900;font-size:1.7rem;font-weight:800;line-height:1}
+.ccard .bf-price strong{color:#F2A900;font-size:1.9rem;font-weight:800;line-height:1}
+.ccard .bf-price em{font-style:normal;background:#F2A900;color:#000;font-weight:900;font-size:.74rem;padding:3px 8px;border-radius:50px;align-self:center}
+
+/* Faixa logo abaixo do hero nas páginas de curso */
+.bf-strip{background:#000;color:#fff;border-top:3px solid #F2A900;border-bottom:3px solid #F2A900}
+.bf-strip-in{max-width:1240px;margin:0 auto;padding:22px 20px;display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:14px 32px;text-align:center}
+.bf-strip-t{font-weight:900;font-size:1.7rem;letter-spacing:.06em;text-transform:uppercase;color:#F2A900;line-height:1}
+.bf-strip-p{font-size:1.1rem;color:rgba(255,255,255,.9)}
+.bf-strip-p s{color:rgba(255,255,255,.55)}
+.bf-strip-p strong{color:#F2A900;font-size:1.6rem;font-weight:900}
+.bf-strip-p em{font-style:normal;background:#F2A900;color:#000;font-weight:900;font-size:.8rem;padding:3px 9px;border-radius:50px;margin-left:6px;vertical-align:middle}
 
 /* Card de preço das páginas de curso */
-.price-card .bf-tag{margin-bottom:14px}
-.price-card .bf-de{font-size:1rem;color:rgba(255,255,255,.78);margin:6px 0 8px}
+html.bf .price-card{border:2px solid #F2A900;box-shadow:0 0 0 6px rgba(242,169,0,.14),0 30px 60px -30px rgba(0,0,0,.6)}
+.price-card .bf-tag{margin-bottom:14px;font-size:.8rem;padding:7px 14px}
+.price-card .bf-de{font-size:1.05rem;color:rgba(255,255,255,.8);margin:6px 0 8px}
 .price-card .bf-de s{color:rgba(255,255,255,.55)}
 
+@media(max-width:900px){
+  .bf-offers{grid-template-columns:repeat(2,1fr);gap:18px 12px}
+  .bf-offer:last-child{grid-column:1/-1}
+}
 @media(max-width:560px){
-  .bf-bar{font-size:.78rem}
-  .bf-bar-in{padding:9px 14px;gap:6px 14px}
+  .bf-bar-in{padding:8px 12px;gap:6px 10px;flex-wrap:nowrap;justify-content:space-between}
+  .bf-bar-title{font-size:.95rem;letter-spacing:.06em}
+  .bf-bar-txt,.bf-bar .bf-timer-l{display:none}
+  .bf-bar .bf-cd{gap:3px}
+  .bf-bar .bf-cd>span{min-width:30px;padding:3px 2px}
+  .bf-bar .bf-cd b{font-size:.82rem}
+  .bf-bar .bf-cd i{font-size:.48rem;margin-top:2px}
+  .bf-bar-btn{padding:9px 11px;font-size:.66rem;letter-spacing:.06em}
+  .bf-hero{padding:56px 16px 60px}
+  .bf-hero .bf-cd{gap:6px}
+  .bf-hero .bf-cd>span{min-width:62px;padding:10px 4px 8px}
+  .bf-hero .bf-cd b{font-size:1.6rem}
+  .bf-cta{display:block;padding:17px 18px;font-size:.9rem}
+  .bf-strip-in{gap:12px 18px;padding:20px 16px}
+  .bf-strip-in .bf-cta{width:100%}
 }
